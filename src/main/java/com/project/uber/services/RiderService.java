@@ -1,6 +1,5 @@
 package com.project.uber.services;
 
-import com.project.uber.dto.DriverDto;
 import com.project.uber.dto.RideDto;
 import com.project.uber.dto.RideRequestDto;
 import com.project.uber.dto.RiderDto;
@@ -22,4 +21,6 @@ public interface RiderService {
     List<RideDto> getAllMyRides();
 
     Rider createNewRider(User user);
+
+    Rider getCurrentRider();
 }

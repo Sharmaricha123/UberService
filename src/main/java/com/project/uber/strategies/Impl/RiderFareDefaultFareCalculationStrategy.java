@@ -1,6 +1,5 @@
 package com.project.uber.strategies.Impl;
 
-import com.project.uber.dto.RideRequestDto;
 import com.project.uber.entities.RideRequest;
 import com.project.uber.services.DistanceService;
 import com.project.uber.strategies.RideFareCalculationStrategy;

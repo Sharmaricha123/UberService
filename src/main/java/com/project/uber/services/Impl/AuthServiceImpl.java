@@ -13,6 +13,7 @@ import com.project.uber.services.RiderService;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Set;
 
@@ -30,6 +31,7 @@ public class AuthServiceImpl implements AuthService {
     }
 
     @Override
+    @Transactional
     public UserDto signUp(SignupDto signupDto) {
        User user= userRepository.findByEmail(signupDto.getEmail()).orElse(null);
        if(user!=null)
