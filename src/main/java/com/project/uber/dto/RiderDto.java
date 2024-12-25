@@ -11,6 +11,7 @@ import lombok.Setter;
 @AllArgsConstructor
 public class RiderDto {
 
+    private Long id;
     private UserDto user;
     private  Double rating;
 }
