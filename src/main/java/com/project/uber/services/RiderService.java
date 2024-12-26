@@ -1,5 +1,6 @@
 package com.project.uber.services;
 
+import com.project.uber.dto.DriverDto;
 import com.project.uber.dto.RideDto;
 import com.project.uber.dto.RideRequestDto;
 import com.project.uber.dto.RiderDto;
@@ -14,7 +15,7 @@ public interface RiderService {
 
     RideDto cancelRide(Long rideId);
 
-    RiderDto rateDriver(Long rideId,Integer rating);
+    DriverDto rateDriver(Long rideId, Integer rating);
 
     RiderDto getMyProfile();
 
